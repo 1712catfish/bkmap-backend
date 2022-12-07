@@ -22,11 +22,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4&9#etu11jczaec!0udthd-7$&59w-98*zej2q0kq&7+u!=132'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-ALLOWED_HOSTS = ["calm-tor-31293.herokuapp.com"]
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:50527',
+]
+ALLOWED_HOSTS = [
+    '*'
+]
 
 # Application definition
 

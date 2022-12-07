@@ -23,6 +23,8 @@ from base import views
 # Create a router and register our viewsets with it.
 router = DefaultRouter()
 router.register(r'post', views.PostViewSet, basename="post")
+router.register(r'task', views.TaskViewSet, basename="task")
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
